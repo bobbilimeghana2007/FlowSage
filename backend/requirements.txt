@@ -1,0 +1,8 @@
+# Core app. Versions are floors, not pinned/verified in the authoring sandbox (it had no network).
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.5
+# Only needed when FLOWSAGE_BEDROCK_MODE=live
+boto3>=1.34
+# Only needed to run the REAL decision model (separate venv recommended; large download)
+# strands-decider    (see docs/DECIDER_SETUP.md)

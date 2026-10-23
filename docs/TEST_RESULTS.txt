@@ -1,0 +1,46 @@
+test_hash_roundtrip_and_salting (test_flowsage.TestAuth.test_hash_roundtrip_and_salting) ... ok
+test_no_secret_no_token (test_flowsage.TestAuth.test_no_secret_no_token) ... ok
+test_rate_limiter (test_flowsage.TestAuth.test_rate_limiter) ... ok
+test_token_valid_tampered_expired (test_flowsage.TestAuth.test_token_valid_tampered_expired) ... ok
+test_validation (test_flowsage.TestAuth.test_validation) ... ok
+test_bedrock_failure_recorded (test_flowsage.TestBedrock.test_bedrock_failure_recorded) ... ok
+test_fully_ungrounded_evidence_rejected (test_flowsage.TestBedrock.test_fully_ungrounded_evidence_rejected) ... ok
+test_malformed_response_recorded_not_fabricated (test_flowsage.TestBedrock.test_malformed_response_recorded_not_fabricated) ... ok
+test_missing_field_rejected (test_flowsage.TestBedrock.test_missing_field_rejected) ... ok
+test_missing_model_id_is_config_error (test_flowsage.TestBedrock.test_missing_model_id_is_config_error) ... ok
+test_valid_response_grounded_and_ungrounded_dropped (test_flowsage.TestBedrock.test_valid_response_grounded_and_ungrounded_dropped) ... ok
+test_decider_failure_fails_closed_no_tool_run (test_flowsage.TestDeciderPattern.test_decider_failure_fails_closed_no_tool_run) ... ok
+test_disallowed_action_rejected (test_flowsage.TestDeciderPattern.test_disallowed_action_rejected) ... ok
+test_live_client_no_confidence_means_none (test_flowsage.TestDeciderPattern.test_live_client_no_confidence_means_none) ... ok
+test_live_client_parses_confidence_and_validates (test_flowsage.TestDeciderPattern.test_live_client_parses_confidence_and_validates) ... ok
+test_live_client_rejects_out_of_list_answer (test_flowsage.TestDeciderPattern.test_live_client_rejects_out_of_list_answer) ... ok
+test_live_client_unavailable_raises_decider_error (test_flowsage.TestDeciderPattern.test_live_client_unavailable_raises_decider_error) ... ok
+test_prompt_injection_in_logs_cannot_trigger_tool (test_flowsage.TestDeciderPattern.test_prompt_injection_in_logs_cannot_trigger_tool) ... ok
+test_state_marks_logs_untrusted_and_bounded (test_flowsage.TestDeciderPattern.test_state_marks_logs_untrusted_and_bounded) ... ok
+test_tool_registry_refuses_non_allowlisted (test_flowsage.TestDeciderPattern.test_tool_registry_refuses_non_allowlisted) ... ok
+test_audit_trail_and_approval_flow (test_flowsage.TestIsolationAudit.test_audit_trail_and_approval_flow) ... ok
+test_cannot_approve_without_investigation_or_twice (test_flowsage.TestIsolationAudit.test_cannot_approve_without_investigation_or_twice) ... ok
+test_rejection_does_not_execute (test_flowsage.TestIsolationAudit.test_rejection_does_not_execute) ... ok
+test_sql_injection_string_is_inert (test_flowsage.TestIsolationAudit.test_sql_injection_string_is_inert) ... ok
+test_user_isolation (test_flowsage.TestIsolationAudit.test_user_isolation) ... ok
+test_csv_export_and_formula_guard (test_flowsage.TestReports.test_csv_export_and_formula_guard) ... ok
+test_dashboard_from_real_records_and_empty_state (test_flowsage.TestReports.test_dashboard_from_real_records_and_empty_state) ... ok
+test_incident_report_has_required_fields (test_flowsage.TestReports.test_incident_report_has_required_fields) ... ok
+test_all_scenarios_deterministic_and_simulated (test_flowsage.TestScenarios.test_all_scenarios_deterministic_and_simulated) ... ok
+test_expected_decision_for_each_failing_scenario (test_flowsage.TestScenarios.test_expected_decision_for_each_failing_scenario) ... ok
+test_payment_timeout_checks_status_and_does_not_retry (test_flowsage.TestScenarios.test_payment_timeout_checks_status_and_does_not_retry) ... ok
+test_success_scenario_skips_investigation (test_flowsage.TestScenarios.test_success_scenario_skips_investigation) ... ok
+test_bedrock_live_without_model_is_reported_not_faked (test_flowsage.TestService.test_bedrock_live_without_model_is_reported_not_faked) ... ok
+test_cross_user_access_blocked_in_service (test_flowsage.TestService.test_cross_user_access_blocked_in_service) ... ok
+test_login_rate_limited (test_flowsage.TestService.test_login_rate_limited) ... ok
+test_register_login_and_generic_errors (test_flowsage.TestService.test_register_login_and_generic_errors) ... ok
+test_unauthenticated_and_forged_tokens_rejected (test_flowsage.TestService.test_unauthenticated_and_forged_tokens_rejected) ... ok
+test_unknown_scenario_and_status_has_no_secrets (test_flowsage.TestService.test_unknown_scenario_and_status_has_no_secrets) ... ok
+test_argument_validation (test_flowsage.TestTools.test_argument_validation) ... ok
+test_high_risk_recovery_requires_approval (test_flowsage.TestTools.test_high_risk_recovery_requires_approval) ... ok
+test_unknown_recovery_rejected (test_flowsage.TestTools.test_unknown_recovery_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 1.158s
+
+OK
